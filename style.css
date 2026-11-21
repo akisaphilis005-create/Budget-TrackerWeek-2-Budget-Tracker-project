@@ -1,0 +1,202 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #176b50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.logo-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo-heading img {
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #176b50;
+    margin-top: 0;
+}
+
+/* Expense form */
+.add-expense-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Advanced selector 1: Negation pseudo-class */
+input:not([type="date"]) {
+    background-color: #fafafa;
+}
+
+/* Advanced selector 2: Focus pseudo-class */
+input:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #176b50;
+    background-color: #effaf4;
+}
+
+/* Button */
+button {
+    background-color: #176b50;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #104d39;
+}
+
+/* Expense table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Colored table header */
+thead {
+    background-color: #176b50;
+    color: white;
+}
+
+/* Advanced selector 3: Position pseudo-class */
+tr:nth-child(even) {
+    background-color: #eaf5ef;
+}
+
+/* Advanced selector 4: Descendant selector */
+.expenses-section td {
+    color: #333;
+}
+
+/* Table hover effect */
+tbody tr:hover {
+    background-color: #c9ead7;
+    cursor: pointer;
+}
+
+/* Instructions */
+details {
+    background-color: #eaf5ef;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+summary {
+    color: #176b50;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.instructions p {
+    line-height: 1.6;
+}
+
+/* Video */
+.video-section {
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #176b50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .logo-heading {
+        flex-direction: column;
+    }
+}
